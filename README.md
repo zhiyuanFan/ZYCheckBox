@@ -19,4 +19,22 @@ checkBox.delegate = self;
 checkBox.normalImage = [UIImage imageNamed:@"agreeitems_checkbox_normal"];
 checkBox.selectedImage = [UIImage imageNamed:@"agreeitems_checkbox_highlight"];
 ```
+4. 在代理方法中监听事件
+```
+#pragma mark - ZYCheckBoxDelegate
+- (void)checkBox:(ZYCheckBox *)checkBox didClickCheckButton:(UIButton *)checkBtn {
+    NSLog(@"%zd",checkBox.checked);
+}
+
+- (void)checkBox:(ZYCheckBox *)checkBox didClickLinkButton:(UIButton *)linkBtn {
+    //如果是链接,跳转对应网页
+    NSLog(@"jump to website");
+    
+    //如果是电话号码,则可以直接拨打(真机测试)
+    NSMutableString *str=[[NSMutableString alloc]initWithFormat:@"telprompt://%@",linkBtn.titleLabel.text];
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:str]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+    }
+}
+```
 
