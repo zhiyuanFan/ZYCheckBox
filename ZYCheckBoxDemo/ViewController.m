@@ -65,10 +65,10 @@
     NSLog(@"jump to website");
     
     //如果是电话号码,则可以直接拨打(真机测试)
-    //    NSMutableString *str=[[NSMutableString alloc]initWithFormat:@"telprompt://%@",linkBtn.titleLabel.text];
-    //    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:str]]) {
-    //        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
-    //    }
+    NSMutableString *str=[[NSMutableString alloc]initWithFormat:@"telprompt://%@",linkBtn.titleLabel.text];
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:str]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+    }
 }
 
 
