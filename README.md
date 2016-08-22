@@ -12,7 +12,7 @@ A ZYCheckBox object is a view permits the user to make a binary choice.
 
 # 使用方式
 1. 导入头文件 #import "ZYCheckBox.h"
-2. 遵循协议"<ZYCheckBoxDelegate>"
+2. 遵循协议\<ZYCheckBoxDelegate\>
 3. 使用
 ```
 ZYCheckBox *checkBox = [[ZYCheckBox alloc] initWithCheckTitle:@"我同意相关" linkTitle:@"协议与条款" fontSize:13];
