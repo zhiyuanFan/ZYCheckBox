@@ -37,4 +37,5 @@ checkBox.selectedImage = [UIImage imageNamed:@"agreeitems_checkbox_highlight"];
     }
 }
 ```
+![image](https://github.com/zhiyuanFan/ZYCheckBox/raw/master/Demo.png)
 
