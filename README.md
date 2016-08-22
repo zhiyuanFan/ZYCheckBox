@@ -1,5 +1,5 @@
 # ZYCheckBox
-![image](https://github.com/zhiyuanFan/ZYCheckBox/raw/master/Demo.png)
+
 A ZYCheckBox object is a view permits the user to make a binary choice.
 这是一个类似CheckBox功能的控件,该控件分为两部分,一部分是确认 用户是否点击选择 , 另一部分 可以处理 后半部加下划线的文字的 点击事件.
 
@@ -17,6 +17,7 @@ A ZYCheckBox object is a view permits the user to make a binary choice.
 ```
 ZYCheckBox *checkBox = [[ZYCheckBox alloc] initWithCheckTitle:@"我同意相关" linkTitle:@"协议与条款" fontSize:13];
 checkBox.delegate = self;
+//选择的图片最好是@2x和@3x的
 checkBox.normalImage = [UIImage imageNamed:@"agreeitems_checkbox_normal"];
 checkBox.selectedImage = [UIImage imageNamed:@"agreeitems_checkbox_highlight"];
 ```
@@ -38,4 +39,4 @@ checkBox.selectedImage = [UIImage imageNamed:@"agreeitems_checkbox_highlight"];
     }
 }
 ```
-
+![image](https://github.com/zhiyuanFan/ZYCheckBox/raw/master/Demo.png)
